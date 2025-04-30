@@ -10,6 +10,7 @@ RUN npm install -D tailwindcss && npm install -g live-server
 
 # Copy the rest of the files (optional, since we'll mount volume)
 COPY . .
+EXPOSE 3000
 
 # Start Tailwind watcher and live-server together
 CMD sh -c "npm start & live-server --port=3000 --watch=index.html,output.css"
