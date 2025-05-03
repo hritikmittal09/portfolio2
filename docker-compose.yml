@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+  portfolio-dev:
+    container_name: portfolio_dev
+    image: hritik_portfolio
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+    environment:
+      - NODE_ENV=development
+
+  portfolio-prod:
+    container_name: portfolio_prod
+    image: hritik_portfolio
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
