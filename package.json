@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx tailwindcss -i ./style2.css -o ./output.css --watch"
+    "start": "npx tailwindcss -i ./style2.css -o ./output.css --watch",
+    "dev" : "docker-compose up portfolio-dev ",
+    "prod" : "docker-compose up portfolio-prod "
   },
   "keywords": [],
   "author": "",
