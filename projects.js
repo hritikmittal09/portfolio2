@@ -52,7 +52,7 @@ const projects = [
       title: "Blog Website (MERN)",
       image: "images/blog.webp",
       description: "MERN stack blog platform to post, edit, and share development-related articles and findings.",
-      link: "#", // Add actual link if live
+      link: "https://blog-by-hritik.netlify.app/", // Add actual link if live
       linkText: "Visit Blog"
     },
     {
