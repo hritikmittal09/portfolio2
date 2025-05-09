@@ -54,7 +54,16 @@ const projects = [
       description: "MERN stack blog platform to post, edit, and share development-related articles and findings.",
       link: "#", // Add actual link if live
       linkText: "Visit Blog"
-    }
+    },
+    {
+      title: "Hoody.com E-commerce website",
+      image: "images/hoody.com", // Make sure this image exists
+      description: `I developed a Next.js ecommerce website for selling hoodies, where only the admin can manage product listings. 
+        The site features secure Stripe payment integration and a clean, responsive user interface styled with DaisyUI. 
+        This project showcases my ability to build scalable ecommerce solutions with full control over inventory and payments.`,
+      link: "https://hoodycom.vercel.app/",
+      linkText: "View Website"
+    },
   ];
   
   const projectsSection = document.getElementById("projects-container");
