@@ -6,7 +6,10 @@ const skills =[
     {name:"JAVASCRIPT", Image : "./images/js.jpeg"},{name:"CSS ", Image : "./images/css.png"},
     {name:"DJANGO ", Image : "./images/django.png"},
     {name:"NODE.js ", Image : "./images/nodejs.png"},
-    {name:"DOCKER", Image : "./images/docker.png"}
+    {name:"DOCKER", Image : "./images/docker.png"},
+    {name:"SQL", Image : "./images/SQL.jpg"},
+     {name:"MongoDB", Image : "./images/mongodb.jpg"},
+
 ]
 const skillSectionListId = document.getElementById('conveyor-content')
 const skillList = skills.map((i)=>{
