@@ -3,12 +3,13 @@ const skills =[
     {name:"ANGULAR", Image : "./images/angular.png"},
     {name:"REACT.JS", Image : "./images/react.jpg"},
     {name:"HTML", Image : "./images/html.png"},
-    {name:"JAVASCRIPT", Image : "./images/js.jpeg"},{name:"CSS ", Image : "./images/css.png"},
+    {name:"JAVASCRIPT", Image : "./images/js.jpeg"},
+    {name:"CSS ", Image : "./images/css.png"},
     {name:"DJANGO ", Image : "./images/django.png"},
     {name:"NODE.js ", Image : "./images/nodejs.png"},
     {name:"DOCKER", Image : "./images/docker.png"},
     {name:"SQL", Image : "./images/SQL.jpg"},
-     {name:"MongoDB", Image : "./images/mongodb.jpg"},
+    {name:"MONGO-DB", Image : "./images/mongodb.jpg"},
 
 ]
 const skillSectionListId = document.getElementById('conveyor-content')
