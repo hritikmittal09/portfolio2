@@ -8,7 +8,7 @@ const skills =[
     {name:"DJANGO ", Image : "./images/django.png"},
     {name:"NODE.js ", Image : "./images/nodejs.png"},
     {name:"DOCKER", Image : "./images/docker.png"},
-    {name:"SQL", Image : "./images/SQL.jpg"},
+    {name:"SQL", Image : "./images/sqlSkill.jpg"},
     {name:"MONGO-DB", Image : "./images/mongodb.jpg"},
 
 ]
