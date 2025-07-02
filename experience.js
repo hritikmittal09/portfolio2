@@ -4,10 +4,7 @@ const experiences = [
   logo: "images/pearlthoughts.jpg", // Make sure to add the logo image
   position: "Web Developer Intern",
   duration: "May 2025 – Jun 2025",
-  description: `Developed a full-stack Hospital Management System using Next.js (frontend) and NestJS (backend).
-  Implemented features like patient registration, doctor scheduling, appointment booking, and admin dashboards.
-
-  Followed REST API standards, collaborated in agile teams, and gained hands-on experience with Node.js, TypeScript, Docker, and AWS.`,
+  description: `Worked on a full-stack Hospital Management System using Next.js and NestJS with features like patient registration, doctor scheduling, and admin dashboards.`,
   link: "https://www.linkedin.com/company/pearlthoughts/posts/?feedView=all",  // Add your certificate link if available
   linkText: "View Certificate"
 },
