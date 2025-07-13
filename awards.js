@@ -12,7 +12,16 @@ const awards = [
     description: "Earned certifications in Problem Solving, Python, SQL, and more.",
     link: "https://www.hackerrank.com/profile/hritikmittal77", // Replace with your actual HackerRank profile
     linkText: "View Certificates"
-  }
+  }, 
+   
+  {
+  title: "Technology Job Simulation",
+  logo: "images/deloit.jpg", // Use a Deloitte logo image in your project
+  description: "Completed the Deloitte Australia Technology Virtual Job Simulation Program.",
+  link: "udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_dn3wSvDZ9tA8e8TdE_1752181083620_completion_certificate", // If you have a direct credential URL, use that instead
+  linkText: "Show Credential"
+}
+  
 ];
 
 window.addEventListener("DOMContentLoaded", () => {
