@@ -18,7 +18,7 @@ const awards = [
   title: "Technology Job Simulation",
   logo: "images/deloit.jpg", // Use a Deloitte logo image in your project
   description: "Completed the Deloitte Australia Technology Virtual Job Simulation Program.",
-  link: "udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_dn3wSvDZ9tA8e8TdE_1752181083620_completion_certificate", // If you have a direct credential URL, use that instead
+  link: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_dn3wSvDZ9tA8e8TdE_1752181083620_completion_certificate.pdf", // If you have a direct credential URL, use that instead
   linkText: "Show Credential"
 }
   
