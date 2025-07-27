@@ -1,7 +1,7 @@
 const experiences = [
  {
   company: "Freelance",
-  logo: "images/freelance_image.png", // Add an appropriate freelance/logo icon image in your project
+  logo: "images/me3.png", // Add an appropriate freelance/logo icon image in your project
   position: "Freelance Web Developer",
   duration: "September 2024 – Present",
   description: `Delivered multiple projects for startups and individual clients, including full-stack web apps, admin dashboards, and responsive UIs using React, Express.js, and MongoDB. Focused on performance, accessibility, and scalable codebases.`,
