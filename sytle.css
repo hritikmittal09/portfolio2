@@ -22,3 +22,10 @@
       transform: translateX(-100%);
     }
   }
+  /* style.css */
+.custom-bg {
+  background-image: url('/images/herosectionBackground.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
