@@ -20,6 +20,12 @@ const awards = [
   description: "Completed the Deloitte Australia Technology Virtual Job Simulation Program.",
   link: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_dn3wSvDZ9tA8e8TdE_1752181083620_completion_certificate.pdf", // If you have a direct credential URL, use that instead
   linkText: "Show Credential"
+},{
+  title: "AWS Educate Introduction to Cloud 101",
+  logo: "images/awscloudtraing-101 .png", // Use a Deloitte logo image in your project
+  description: "Completed the AWS Educate Introduction to Cloud 101 program, gaining foundational skills in AWS cloud services and cloud computing concepts.",
+  link: "https://www.credly.com/earner/earned/badge/f8c0c06b-e806-44cd-98e2-73f67e667aff", // If you have a direct credential URL, use that instead
+  linkText: "Show Credential"
 }
   
 ];
