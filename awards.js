@@ -26,6 +26,12 @@ const awards = [
   description: "Completed the AWS Educate Introduction to Cloud 101 program, gaining foundational skills in AWS cloud services and cloud computing concepts.",
   link: "https://www.credly.com/earner/earned/badge/f8c0c06b-e806-44cd-98e2-73f67e667aff", // If you have a direct credential URL, use that instead
   linkText: "Show Credential"
+}, {
+  title: "AWS Educate Introduction to Cloud storage",
+  logo: "images/aws-educate-getting-started-with-storage.png", // Use a Deloitte logo image in your project
+  description: "Completed the AWS Educate Introduction to Cloud storage program, gaining foundational skills in AWS cloud services and cloud computing concepts.",
+  link: "https://www.credly.com/badges/624c6b3e-9f2c-4078-ae84-1eb6432e69c6/whatsapp", // If you have a direct credential URL, use that instead
+  linkText: "Show Credential"
 }
   
 ];
