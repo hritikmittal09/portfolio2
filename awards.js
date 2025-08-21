@@ -32,6 +32,13 @@ const awards = [
   description: "Completed the AWS Educate Introduction to Cloud storage program, gaining foundational skills in AWS cloud services and cloud computing concepts.",
   link: "https://www.credly.com/badges/624c6b3e-9f2c-4078-ae84-1eb6432e69c6/whatsapp", // If you have a direct credential URL, use that instead
   linkText: "Show Credential"
+},
+{
+  title: "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
+  logo: "images/OCI-ai-fundations .jpeg", // Use a Deloitte logo image in your project
+  description: "The Oracle Cloud Infrastructure (OCI) AI Foundations certification introduces learners to AI and ML fundamentals, focusing on their practical use within OCI. It’s beginner-friendly and requires no prior technical experience.",
+  link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=E533DE5350F95FC8FC4D3016C2CF516334FB2CE7CCFCC5597412EC6BD70E87A7", // If you have a direct credential URL, use that instead
+  linkText: "Show Credential"
 }
   
 ];
