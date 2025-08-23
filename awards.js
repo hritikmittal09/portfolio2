@@ -3,44 +3,44 @@ const awards = [
     title: "LeetCode",
     logo: "images/leetcode.png", // Make sure this image exists
     description: "Solved 200+ problems and earned multiple badges on data structures, algorithms.",
-    link: "https://leetcode.com/u/hHRITIKMITTAL/", // Replace with your actual LeetCode profile
+    link: "https://leetcode.com/u/hHRITIKMITTAL/", 
     linkText: "View Profile"
   },
   {
     title: "HackerRank",
-    logo: "images/hackerrank.png", // Make sure this image exists
+    logo: "images/hackerrank.png",
     description: "Earned certifications in Problem Solving, Python, SQL, and more.",
-    link: "https://www.hackerrank.com/profile/hritikmittal77", // Replace with your actual HackerRank profile
+    link: "https://www.hackerrank.com/profile/hritikmittal77",
     linkText: "View Certificates"
   }, 
-   
   {
-  title: "Technology Job Simulation",
-  logo: "images/deloit.jpg", // Use a Deloitte logo image in your project
-  description: "Completed the Deloitte Australia Technology Virtual Job Simulation Program.",
-  link: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_dn3wSvDZ9tA8e8TdE_1752181083620_completion_certificate.pdf", // If you have a direct credential URL, use that instead
-  linkText: "Show Credential"
-},{
-  title: "AWS Educate Introduction to Cloud 101",
-  logo: "images/awscloudtraing-101 .png", // Use a Deloitte logo image in your project
-  description: "Completed the AWS Educate Introduction to Cloud 101 program, gaining foundational skills in AWS cloud services and cloud computing concepts.",
-  link: "https://www.credly.com/earner/earned/badge/f8c0c06b-e806-44cd-98e2-73f67e667aff", // If you have a direct credential URL, use that instead
-  linkText: "Show Credential"
-}, {
-  title: "AWS Educate Introduction to Cloud storage",
-  logo: "images/aws-educate-getting-started-with-storage.png", // Use a Deloitte logo image in your project
-  description: "Completed the AWS Educate Introduction to Cloud storage program, gaining foundational skills in AWS cloud services and cloud computing concepts.",
-  link: "https://www.credly.com/badges/624c6b3e-9f2c-4078-ae84-1eb6432e69c6/whatsapp", // If you have a direct credential URL, use that instead
-  linkText: "Show Credential"
-},
-{
-  title: "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
-  logo: "images/OCI-ai-fundations .jpeg", // Use a Deloitte logo image in your project
-  description: "The Oracle Cloud Infrastructure (OCI) AI Foundations certification introduces learners to AI and ML fundamentals, focusing on their practical use within OCI. It’s beginner-friendly and requires no prior technical experience.",
-  link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=E533DE5350F95FC8FC4D3016C2CF516334FB2CE7CCFCC5597412EC6BD70E87A7", // If you have a direct credential URL, use that instead
-  linkText: "Show Credential"
-}
-  
+    title: "Technology Job Simulation",
+    logo: "images/deloit.jpg",
+    description: "Completed the Deloitte Australia Technology Virtual Job Simulation Program.",
+    link: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_dn3wSvDZ9tA8e8TdE_1752181083620_completion_certificate.pdf",
+    linkText: "Show Credential"
+  },
+  {
+    title: "AWS Educate Introduction to Cloud 101",
+    logo: "images/awscloudtraing-101 .png",
+    description: "Completed the AWS Educate Introduction to Cloud 101 program, gaining foundational skills in AWS cloud services and cloud computing concepts.",
+    link: "https://www.credly.com/earner/earned/badge/f8c0c06b-e806-44cd-98e2-73f67e667aff",
+    linkText: "Show Credential"
+  },
+  {
+    title: "AWS Educate Introduction to Cloud storage",
+    logo: "images/aws-educate-getting-started-with-storage.png",
+    description: "Completed the AWS Educate Introduction to Cloud storage program, gaining foundational skills in AWS cloud services and cloud computing concepts.",
+    link: "https://www.credly.com/badges/624c6b3e-9f2c-4078-ae84-1eb6432e69c6/whatsapp",
+    linkText: "Show Credential"
+  },
+  {
+    title: "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
+    logo: "images/OCI-ai-fundations .jpeg",
+    description: "The Oracle Cloud Infrastructure (OCI) AI Foundations certification introduces learners to AI and ML fundamentals, focusing on their practical use within OCI. It’s beginner-friendly and requires no prior technical experience.",
+    link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=E533DE5350F95FC8FC4D3016C2CF516334FB2CE7CCFCC5597412EC6BD70E87A7",
+    linkText: "Show Credential"
+  }
 ];
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -48,15 +48,15 @@ window.addEventListener("DOMContentLoaded", () => {
 
   if (awardSection) {
     const awardCards = awards.map(award => `
-      <div class="max-w-xs rounded overflow-hidden shadow-lg mx-4 my-4 bg-white">
-        <img class="w-full h-56 object-contain bg-gray-200" src="${award.logo}" alt="${award.title}">
+      <div class="max-w-xs rounded overflow-hidden shadow-lg mx-4 my-4 bg-white dark:bg-gray-800 transition">
+        <img class="w-full h-56 object-contain bg-gray-200 dark:bg-gray-700" src="${award.logo}" alt="${award.title}">
         <div class="px-6 py-4">
-          <h3 class="text-xl font-bold mb-2">${award.title}</h3>
-          <p class="text-gray-700">${award.description}</p>
+          <h3 class="text-xl font-bold mb-2 text-gray-900 dark:text-white">${award.title}</h3>
+          <p class="text-gray-700 dark:text-gray-300">${award.description}</p>
         </div>
         <div class="px-6 py-4">
           <a href="${award.link}" target="_blank"
-             class="inline-block px-4 py-2  text-white rounded-full bg-black hover:bg-green-700">
+             class="inline-block px-4 py-2 text-white rounded-full bg-black hover:bg-green-700 transition">
              ${award.linkText}
           </a>
         </div>

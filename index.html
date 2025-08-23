@@ -1,6 +1,5 @@
 <!doctype html>
-<html>
-
+<html lang="en" class="">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,170 +8,125 @@
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="sytle.css">
-  <title>Hritik Mittal</title>
   <link rel="stylesheet" href="style2.css">
   <link rel="shortcut icon" href="images/fevicon-icon.png" type="image/x-icon">
-
-
+  <title>Hritik Mittal</title>
+  <style>
+    html {
+      transition: background-color 0.5s, color 0.5s;
+    }
+  </style>
 </head>
 
-<body>
-  <nav class="flex bg-black h-14 w-full sticky ">
-    <div  class="contents text-white  text-center p-10 justify-center sticky">
-      <a href="#" class="px-5 pt-3 mx-auto
-              justify-center align-baseline"> Portfolio website</a>
+<body class="bg-white dark:bg-gray-900 text-black dark:text-white transition-colors duration-500">
 
+  <!-- Navbar with Theme Toggle -->
+  <nav class="flex bg-black dark:bg-gray-800 h-14 w-full sticky top-0 z-50 justify-between items-center px-4">
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="p-2 rounded-full bg-gray-700 hover:bg-gray-600 transition duration-300">
+      <i id="theme-icon" class="fa-solid fa-moon text-white"></i>
+    </button>
 
+    <!-- Navbar Title -->
+    <div class="text-white dark:text-gray-200 text-center">
+      <a href="#" class="px-5 pt-3">Portfolio Website</a>
     </div>
   </nav>
-  <section class=" custom-bg bg-gray-900 h-50 text-white py-20">
+
+  <!-- Hero Section -->
+  <section class="custom-bg bg-gray-900 dark:bg-gray-100 text-white dark:text-black py-20">
     <div class="container mx-auto flex flex-col items-center">
       <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Welcome to My Portfolio</h1>
-      <p class="text-sm sm:text-base md:text-xl mb-8 flex justify-center items-center flex-wrap  px-10 text-center">I'm HRITIK MITTAL Passionate Python and Web Developer.</p>
+      <p class="text-sm sm:text-base md:text-xl mb-8 flex justify-center items-center flex-wrap  px-10 text-center">
+        I'm HRITIK MITTAL Passionate Python and Web Developer.
+      </p>
 
       <div class="flex justify-center">
-        <img class="w-64 h-64 rounded-full border-4 border-white" src="images/me2.jpg" alt="Profile Image">
-
-
-
+        <img class="w-64 h-64 rounded-full border-4 border-white dark:border-black" src="images/me2.jpg" alt="Profile Image">
       </div>
-      <div class="flex flex-wrap space-x-10 p-20 text-white text-2xl">
-        <div class="linkd_in text-white">
-          <a href="https://www.linkedin.com/in/hritik-mittal09/" target="_blank"><i
-              class="fa-brands fa-linkedin-in"></i></a>
 
-        </div>
-        <div class="harrank text-white">
-          <a href="https://www.hackerrank.com/hritikmittal77?hr_r=1" target="_blank"><i
-              class="fa-brands fa-hackerrank"></i></a>
-
-        </div>
-        <div class="harrank text-white">
-          <a href="https://github.com/hritikmittal09" target="_blank"><i class="fa-brands fa-github"></i></a>
-
-        </div>
-        <div class="harrank text-white">
-          <a href="mailto:hritikmittal77@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-        </div>
-      
-
-        
-
-
+      <!-- Social Links -->
+      <div class="flex flex-wrap space-x-10 p-20 text-2xl">
+        <a href="https://www.linkedin.com/in/hritik-mittal09/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.hackerrank.com/hritikmittal77?hr_r=1" target="_blank"><i class="fa-brands fa-hackerrank"></i></a>
+        <a href="https://github.com/hritikmittal09" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:hritikmittal77@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
       </div>
     </div>
-
   </section>
 
-
-  </div>
-
-  <div class="skill">
-    <section class="bg-gray-200 py-10">
-      <div class="container mx-auto">
-        <h2 class="text-3xl font-bold mb-8 container text-center">Skills</h2>
-
-        <div class="conveyor-belt overflow-hidden">
-          <ul class="conveyor-content flex" id="conveyor-content">
-
-          </ul>
-        </div>
-      </div>
-    </section>
-
-  </div>
-
-  <section class="About  ">
-    <section class="bg-gray-200 py-10 container p-10 flex flex-wrap justify-center mx-auto">
-      <div class="container mx-auto">
-        <h2 class="text-3xl font-bold mb-8 text-center">About Me</h2>
-        <div class="flex flex-col md:flex-row">
-
-          <div class=" text-center">
-            <p class="text-gray-700 mb-4 flex flex-wrap justify-center items-center ">Hello, I'm Hritik Mittal. I have 4
-              years of experience in web development, with a strong focus on Python, Django, HTML, CSS, Node.js, and
-              JavaScript. I'm passionate about creating responsive and user-friendly web applications.
-              Throughout my career, I have worked on various projects and gained valuable experience by completing three
-              internships. This exposure has allowed me to enhance my skills and stay updated with the latest
-              technologies and industry trends.I believe in continuous learning and exploring new tools and frameworks
-              to improve my development capabilities. I am dedicated to delivering high-quality code and providing
-              effective solutions to meet clients' requirements.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-  </section>
-  <section class="bg-gray-200 py-10">
+  <!-- Skills -->
+  <section class="bg-gray-200 dark:bg-gray-800 py-10">
     <div class="container mx-auto">
-      <h2 class="text-3xl font-bold text-center m-10 ">Education</h2>
-      <div class="flex flex-col md:flex-row items-center">
-        <div class="w-full">
-          <img class="mx-auto mb-6 w-48 h-48 object-contain shadow-lg" src="images/college logo.jfif"
-            alt="College Logo">
-
-
-
-          <div class="w-full text-center">
-            <p class="text-gray-700  p-10"> B.Tech graduate in Computer Science from Raja Balwant Singh College, Agra.
-              The college is affiliated with Dr. A.P.J. Abdul Kalam Technical University, Uttar Pradesh. actively
-              seeking job and internship opportunities to apply and further develop my skills and knowledge in the
-              field.</p>
-          </div>
-        </div>
+      <h2 class="text-3xl font-bold mb-8 text-center">Skills</h2>
+      <div class="conveyor-belt overflow-hidden">
+        <ul class="conveyor-content flex" id="conveyor-content"></ul>
       </div>
     </div>
   </section>
 
-  <section class="bg-gray-200 py-10">
+  <!-- About -->
+  <section class="bg-gray-200 dark:bg-gray-800 py-10">
+    <div class="container mx-auto p-10">
+      <h2 class="text-3xl font-bold mb-8 text-center">About Me</h2>
+      <p class="text-gray-700 dark:text-gray-300 text-center">
+        Hello, I'm Hritik Mittal. I have 4 years of experience in web development, with a strong focus on Python, Django, HTML, CSS, Node.js, and JavaScript. 
+        I'm passionate about creating responsive and user-friendly web applications. 
+        Throughout my career, I have worked on various projects and gained valuable experience by completing three internships. 
+        This exposure has allowed me to enhance my skills and stay updated with the latest technologies and industry trends.
+      </p>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="bg-gray-200 dark:bg-gray-800 py-10">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold m-10">Education</h2>
+      <img class="mx-auto mb-6 w-48 h-48 object-contain shadow-lg" src="images/college logo.jfif" alt="College Logo">
+      <p class="text-gray-700 dark:text-gray-300 p-10">
+        B.Tech graduate in Computer Science from Raja Balwant Singh College, Agra. 
+        The college is affiliated with Dr. A.P.J. Abdul Kalam Technical University, Uttar Pradesh. 
+        Actively seeking job and internship opportunities to apply and further develop my skills.
+      </p>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="bg-gray-200 dark:bg-gray-800 py-10">
     <div class="container mx-auto">
       <h2 class="text-3xl font-bold mb-8 text-center">Experience</h2>
-      <div id="experience-container" class="flex flex-wrap justify-center">
-        <!-- Dynamic cards will be injected here -->
-      </div>
+      <div id="experience-container" class="flex flex-wrap justify-center"></div>
     </div>
   </section>
 
-  <section class="bg-gray-200 py-10">
+  <!-- Projects -->
+  <section class="bg-gray-200 dark:bg-gray-800 py-10">
     <div class="container mx-auto">
       <h2 class="text-3xl font-bold mb-8 text-center">Projects</h2>
       <div id="projects-container" class="flex flex-wrap justify-center"></div>
     </div>
   </section>
 
-  <!-- Awards & Certifications Section -->
-<section class="bg-gray-100 py-10">
-  <div class="container mx-auto">
-    <h2 class="text-3xl font-bold mb-8 text-center">Awards & Certifications</h2>
-    <div id="award-container" class="flex flex-wrap justify-center">
-      <!-- Dynamic award cards will be injected here -->
+  <!-- Awards -->
+  <section class="bg-gray-100 dark:bg-gray-900 py-10">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-8 text-center">Awards & Certifications</h2>
+      <div id="award-container" class="flex flex-wrap justify-center"></div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-
-
-  <footer class="bg-black h-1/2
-   w-full">
-    <div class="p-10 text-white text-2xl ">
-
-      <div class="links flex flex-wrap space-x-3">
-
-
-
-      </div>
-
+  <!-- Footer -->
+  <footer class="bg-black dark:bg-gray-800 w-full">
+    <div class="p-10 text-white text-2xl text-center">
+      <p>© 2025 Hritik Mittal | All Rights Reserved</p>
     </div>
-
   </footer>
+
+  <!-- Scripts -->
   <script src="./skills.js"></script>
   <script src="./projects.js"></script>
   <script src="./experience.js"></script>
   <script src="./awards.js"></script>
-
-
+  <script src="./theme-toggle.js"></script>
 </body>
-
 </html>
