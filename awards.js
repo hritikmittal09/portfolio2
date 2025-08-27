@@ -40,6 +40,12 @@ const awards = [
     description: "The Oracle Cloud Infrastructure (OCI) AI Foundations certification introduces learners to AI and ML fundamentals, focusing on their practical use within OCI. It’s beginner-friendly and requires no prior technical experience.",
     link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=E533DE5350F95FC8FC4D3016C2CF516334FB2CE7CCFCC5597412EC6BD70E87A7",
     linkText: "Show Credential"
+  }, {
+    title: "Oracle Cloud Infrastructure 2025 Certified Foundations Associate",
+    logo: "images/oci cloud.jpeg",
+    description: "The OCI Foundations certification validates fundamental knowledge of Oracle Cloud Infrastructure (OCI), covering core services such as compute, storage, networking, databases, security, and cloud governance. It focuses on foundational-level cloud concepts without requiring hands-on technical experience.",
+    link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=E9527EEBF6188A297BD79128F35A82508F347BEDB3A1E6D1943CC8FB987A2FF3",
+    linkText: "Show Credential"
   }
 ];
 
