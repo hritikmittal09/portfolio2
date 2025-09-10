@@ -1,5 +1,12 @@
 const projects = [
-  {
+{
+    title: "Social Media Post Generator",
+    image: 'images/social-media-post-genrator.jpg',
+    description: "AI-powered Social Media Post Generator built with LLMs and Gemini Inference API. It creates engaging, customizable posts with smart text suggestions and design automation to save time and boost creativity.",
+    link: "https://social-media-post-generator-sandy.vercel.app/",
+    linkText: "View Project"
+  }
+  ,{
     title: "Virtual Assistant",
     image: "images/zera.webp",
     description: "The virtual assistant with a GUI developed in Python and Tkinter combines voice recognition capabilities with an intuitive graphical interface...",
