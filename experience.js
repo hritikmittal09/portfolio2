@@ -1,4 +1,14 @@
 const experiences = [
+
+  {
+  company: "Hacktoberfest 2025",
+  logo: "images/hacktoberfest.png",
+  position: "Open Source Contributor",
+  duration: "Oct 2025",
+  description: `Contributed for the first time to open source during Hacktoberfest 2025. Fixed small UI issues and replaced deprecated APIs in beginner-friendly React projects.`,
+  link: "https://github.com/ianshulx/React-projects-for-beginners",
+  linkText: "View Repository"
+},
  {
   company: "Freelance",
   logo: "images/me3.png",

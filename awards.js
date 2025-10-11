@@ -1,4 +1,12 @@
 const awards = [
+  
+  {
+  title: "Retrieval Augmented Generation (RAG)",
+  logo: "images/deeplearning.jpg", // Make sure this image exists
+  description: "Completed the RAG course by DeepLearning.AI on Coursera with 84.24% grade, gaining practical knowledge in combining LLMs with external data sources.",
+  link: "https://coursera.org/account/accomplishments/verify/J125XOJVIRSX",
+  linkText: "View Certificate"
+},
   {
     title: "LeetCode",
     logo: "images/leetcode.png", // Make sure this image exists
