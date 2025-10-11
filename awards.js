@@ -7,6 +7,7 @@ const awards = [
   link: "https://coursera.org/account/accomplishments/verify/J125XOJVIRSX",
   linkText: "View Certificate"
 },
+
   {
     title: "LeetCode",
     logo: "images/leetcode.png", // Make sure this image exists
