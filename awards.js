@@ -1,5 +1,11 @@
 const awards = [
-  
+   {
+  title: "Hacktoberfest Super Contributor",
+  logo: "images/superContribtor.png",
+  description: "Achieved Super Contributor status in Hacktoberfest by making significant contributions to open-source projects, demonstrating commitment to the developer community.",
+  link: "https://www.holopin.io/hacktoberfest2025/userbadge/cmgse55tb00k3kw04q5rcud79",
+  linkText: "Show Credential"
+},
   {
   title: "Retrieval Augmented Generation (RAG)",
   logo: "images/deeplearning.jpg", // Make sure this image exists
