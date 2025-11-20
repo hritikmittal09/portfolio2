@@ -35,15 +35,7 @@ const experiences = [
   link: "https://www.linkedin.com/company/www.rationarium.com/",
   linkText: "View Company Website"
  },
- {
-  company: "BasketHunt Pvt. Ltd",
-  logo: "images/baskethunt.jpg",
-  position: "IT & Web Developer Intern",
-  duration: "24 April 2023 – 03 July 2023",
-  description: "Worked on a real-time chat app using Node.js and Express with a team.",
-  link: "https://www.linkedin.com/posts/hritik-mittal09_baskethunt-lor-completion-certificate-activity-7084194694502506496-rzYk?utm_source=share&utm_medium=member_desktop",
-  linkText: "View Certificate"
- },
+ 
  {
   company: "Devtown Pvt. Ltd",
   logo: "images/devtown.png",
