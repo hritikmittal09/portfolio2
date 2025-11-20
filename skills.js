@@ -1,11 +1,13 @@
 const skills =[
     {name:"Python", Image : "./images/python.png"},
     {name:"ANGULAR", Image : "./images/angular.png"},
+     {name:"NEST.JS", Image : "./images/nestjs.png"},
     {name:"REACT.JS", Image : "./images/react.jpg"},
+    
     {name:"HTML", Image : "./images/html.png"},
     {name:"JAVASCRIPT", Image : "./images/js.jpeg"},
     {name:"CSS ", Image : "./images/css.png"},
-    {name:"DJANGO ", Image : "./images/django.png"},
+    
     {name:"NODE.js ", Image : "./images/nodejs.png"},
     {name:"DOCKER", Image : "./images/docker.png"},
     {name:"SQL", Image : "./images/sqlSkill.jpg"},
