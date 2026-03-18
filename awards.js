@@ -1,5 +1,15 @@
 const awards = [
-   {
+   
+  {
+    
+  title: "AWS Certified Cloud Practitioner",
+  logo: "images/aws-certified-cloud-practitioner.png",
+  description: "Certified in AWS Cloud Practitioner, showcasing knowledge of core AWS services, security, pricing, and cloud fundamentals.",
+  link: "https://www.credly.com/badges/c2cf8e6a-0fe0-4eec-a000-86338cb44152/public_url",
+  linkText: "Show Credential"
+}
+  
+  ,{
   title: "Hacktoberfest Super Contributor",
   logo: "images/superContribtor.png",
   description: "Achieved Super Contributor status in Hacktoberfest by making significant contributions to open-source projects, demonstrating commitment to the developer community.",
