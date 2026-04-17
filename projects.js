@@ -7,7 +7,7 @@ const projects = [
     linkText: "View Project"
   }
   , {
-  title: "LLM Chat Bot",
+  title: "Zera virtual assistant",
   image: "images/zera.webp",
   description: "An AI-powered chatbot built using Large Language Models (LLMs), designed to simulate intelligent conversations. Developed with Python, it leverages modern NLP techniques to provide context-aware responses and a smooth interactive experience.",
   link: "https://github.com/hritikmittal09/chat-bot-LLm.git",
