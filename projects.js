@@ -14,6 +14,7 @@ const projects = [
   linkText: "View Project"
 },
   ,
+  
   {
     title: "Kudrat's Landing Page",
     image: "images/kudrat-img.jfif",
