@@ -6,20 +6,14 @@ const projects = [
     link: "https://social-media-post-generator-sandy.vercel.app/",
     linkText: "View Project"
   }
-  ,{
-    title: "Virtual Assistant",
-    image: "images/zera.webp",
-    description: "The virtual assistant with a GUI developed in Python and Tkinter combines voice recognition capabilities with an intuitive graphical interface...",
-    link: "https://www.linkedin.com/posts/hritik-mittal09_google-like-software-ugcPost-6979409782709366784-emnc?utm_source=share&utm_medium=member_desktop",
-    linkText: "View Project"
-  },
-  {
-    title: "Notes-Taking-App",
-    image: "images/notes.webp",
-    description: "JavaScript-based notes app with local storage for creating, editing, and retrieving notes efficiently and offline.",
-    link: "https://hritikmittal09.github.io/task-manager/",
-    linkText: "View Project"
-  },
+  , {
+  title: "LLM Chat Bot",
+  image: "images/zera.webp",
+  description: "An AI-powered chatbot built using Large Language Models (LLMs), designed to simulate intelligent conversations. Developed with Python, it leverages modern NLP techniques to provide context-aware responses and a smooth interactive experience.",
+  link: "https://github.com/hritikmittal09/chat-bot-LLm.git",
+  linkText: "View Project"
+},
+  ,
   {
     title: "Kudrat's Landing Page",
     image: "images/kudrat-img.jfif",
