@@ -26,4 +26,3 @@ const skillList = skills.map((i)=>{
 
 skillSectionListId.innerHTML =skillList
 
-console.log(skillSectionListId);
