@@ -6,6 +6,7 @@ const projects = [
     link: "https://social-media-post-generator-sandy.vercel.app/",
     linkText: "View Project"
   }
+  
   , {
   title: "Zera virtual assistant",
   image: "images/zera.webp",
