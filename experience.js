@@ -1,64 +1,69 @@
 const experiences = [
+  {
+    company: "Hacktoberfest 2025",
+    logo: "images/hacktoberfest.png",
+    position: "Open Source Contributor",
+    duration: "Oct 2025",
+    description: `Contributed for the first time to open source during Hacktoberfest 2025. Fixed small UI issues and replaced deprecated APIs in beginner-friendly React projects.`,
+    link: "https://github.com/ianshulx/React-projects-for-beginners",
+    linkText: "View Repository",
+  },
+  {
+    company: "Freelance",
+    logo: "images/me3.png",
+    position: "Freelance Web Developer",
+    duration: "September 2024 – Present",
+    description: `Delivered multiple projects for startups and individual clients, including full-stack web apps, admin dashboards, and responsive UIs using React, Express.js, and MongoDB. Focused on performance, accessibility, and scalable codebases.`,
+    link: "https://www.linkedin.com/in/hritik-mittal09",
+    linkText: "View Portfolio",
+  },
+  {
+    company: "PearlThoughts",
+    logo: "images/pearlthoughts.jpg",
+    position: "Web Developer Intern",
+    duration: "May 2025 – Jun 2025",
+    description: `Worked on a full-stack Hospital Management System using Next.js and NestJS with features like patient registration, doctor scheduling, and admin dashboards.`,
+    link: "https://www.linkedin.com/company/pearlthoughts/posts/?feedView=all",
+    linkText: "View Certificate",
+  },
+  {
+    company: "Rationarium Pvt. Ltd",
+    logo: "images/ratationarium-logo.jpeg",
+    position: "Front-end Developer",
+    duration: "April 2023 – April 2024",
+    description:
+      "Working on real-time Angular applications in Web3 and integrating with digital wallets like MetaMask.",
+    link: "https://www.linkedin.com/company/www.rationarium.com/",
+    linkText: "View Company Website",
+  },
 
   {
-  company: "Hacktoberfest 2025",
-  logo: "images/hacktoberfest.png",
-  position: "Open Source Contributor",
-  duration: "Oct 2025",
-  description: `Contributed for the first time to open source during Hacktoberfest 2025. Fixed small UI issues and replaced deprecated APIs in beginner-friendly React projects.`,
-  link: "https://github.com/ianshulx/React-projects-for-beginners",
-  linkText: "View Repository"
-},
- {
-  company: "Freelance",
-  logo: "images/me3.png",
-  position: "Freelance Web Developer",
-  duration: "September 2024 – Present",
-  description: `Delivered multiple projects for startups and individual clients, including full-stack web apps, admin dashboards, and responsive UIs using React, Express.js, and MongoDB. Focused on performance, accessibility, and scalable codebases.`,
-  link: "https://www.linkedin.com/in/hritik-mittal09",
-  linkText: "View Portfolio"
- }, {
-  company: "PearlThoughts",
-  logo: "images/pearlthoughts.jpg",
-  position: "Web Developer Intern",
-  duration: "May 2025 – Jun 2025",
-  description: `Worked on a full-stack Hospital Management System using Next.js and NestJS with features like patient registration, doctor scheduling, and admin dashboards.`,
-  link: "https://www.linkedin.com/company/pearlthoughts/posts/?feedView=all",
-  linkText: "View Certificate"
- },
- {
-  company: "Rationarium Pvt. Ltd",
-  logo: "images/ratationarium-logo.jpeg",
-  position: "Front-end Developer",
-  duration: "April 2023 – April 2024",
-  description: "Working on real-time Angular applications in Web3 and integrating with digital wallets like MetaMask.",
-  link: "https://www.linkedin.com/company/www.rationarium.com/",
-  linkText: "View Company Website"
- },
- 
- {
-  company: "Devtown Pvt. Ltd",
-  logo: "images/devtown.png",
-  position: "Full Stack Web Developer Intern",
-  duration: "10 June – 5 October",
-  description: "Worked on different projects including a Movie Browser application.",
-  link: "https://cert.devtown.in/verify/Z1jsAoA",
-  linkText: "View Certificate"
- },
- {
-  company: "Twowaits Pvt. Ltd",
-  logo: "images/wowaits.jpeg",
-  position: "Python Developer Intern",
-  duration: "1 Feb 2022 – 28 Feb 2022",
-  description: "Built a voice assistant to perform manual computer tasks using voice commands.",
-  link: "https://drive.google.com/file/d/1CcbbJcI6SE01w9xOWB2kdSc3NUCw8_0D/view",
-  linkText: "View Certificate"
- }
+    company: "Devtown Pvt. Ltd",
+    logo: "images/devtown.png",
+    position: "Full Stack Web Developer Intern",
+    duration: "10 June – 5 October",
+    description:
+      "Worked on different projects including a Movie Browser application.",
+    link: "https://cert.devtown.in/verify/Z1jsAoA",
+    linkText: "View Certificate",
+  },
+  {
+    company: "Twowaits Pvt. Ltd",
+    logo: "images/wowaits.jpeg",
+    position: "Python Developer Intern",
+    duration: "1 Feb 2022 – 28 Feb 2022",
+    description:
+      "Built a voice assistant to perform manual computer tasks using voice commands.",
+    link: "https://drive.google.com/file/d/1CcbbJcI6SE01w9xOWB2kdSc3NUCw8_0D/view",
+    linkText: "View Certificate",
+  },
 ];
 
 const experienceSection = document.getElementById("experience-container");
 
-const experienceCards = experiences.map(exp => `
+const experienceCards = experiences
+  .map(
+    (exp) => `
   <div class="max-w-xs rounded overflow-hidden shadow-lg mx-4 my-4 bg-white dark:bg-gray-800 transition">
     <img class="w-full h-56 object-cover" src="${exp.logo}" alt="${exp.company}">
     <div class="px-6 py-4">
@@ -74,6 +79,8 @@ const experienceCards = experiences.map(exp => `
       </a>
     </div>
   </div>
-`).join("");
+`,
+  )
+  .join("");
 
 experienceSection.innerHTML = experienceCards;
