@@ -17,16 +17,15 @@ const awards = [
   },
   {
     title: "Retrieval Augmented Generation (RAG)",
-    logo: "images/deeplearning.jpg", // Make sure this image exists
+    logo: "images/deeplearning.jpg",
     description:
       "Completed the RAG course by DeepLearning.AI on Coursera with 84.24% grade, gaining practical knowledge in combining LLMs with external data sources.",
     link: "https://coursera.org/account/accomplishments/verify/J125XOJVIRSX",
     linkText: "View Certificate",
   },
-
   {
     title: "LeetCode",
-    logo: "images/leetcode.png", // Make sure this image exists
+    logo: "images/leetcode.png",
     description:
       "Solved 200+ problems and earned multiple badges on data structures, algorithms.",
     link: "https://leetcode.com/u/hHRITIKMITTAL/",
@@ -69,7 +68,7 @@ const awards = [
       "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
     logo: "images/OCI-ai-fundations .jpeg",
     description:
-      "The Oracle Cloud Infrastructure (OCI) AI Foundations certification introduces learners to AI and ML fundamentals, focusing on their practical use within OCI. It’s beginner-friendly and requires no prior technical experience.",
+      "The Oracle Cloud Infrastructure (OCI) AI Foundations certification introduces learners to AI and ML fundamentals, focusing on their practical use within OCI. It's beginner-friendly and requires no prior technical experience.",
     link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=E533DE5350F95FC8FC4D3016C2CF516334FB2CE7CCFCC5597412EC6BD70E87A7",
     linkText: "Show Credential",
   },
@@ -90,9 +89,9 @@ window.addEventListener("DOMContentLoaded", () => {
     const awardCards = awards
       .map(
         (award) => `
-      <div class="max-w-xs rounded overflow-hidden shadow-lg mx-4 my-4 bg-white dark:bg-gray-800 transition">
+      <div class="max-w-xs rounded overflow-hidden shadow-lg mx-4 my-4 bg-white dark:bg-gray-800 transition flex flex-col">
         <img class="w-full h-56 object-contain bg-gray-200 dark:bg-gray-700" src="${award.logo}" alt="${award.title}">
-        <div class="px-6 py-4">
+        <div class="px-6 py-4 flex-1">
           <h3 class="text-xl font-bold mb-2 text-gray-900 dark:text-white">${award.title}</h3>
           <p class="text-gray-700 dark:text-gray-300">${award.description}</p>
         </div>

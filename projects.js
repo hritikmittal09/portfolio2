@@ -15,7 +15,6 @@ const projects = [
     link: "https://github.com/hritikmittal09/chat-bot-LLm.git",
     linkText: "View Project",
   },
-  ,
   {
     title: "Kudrat's Landing Page",
     image: "images/kudrat-img.jfif",
@@ -28,7 +27,7 @@ const projects = [
     title: "Zomato Landing Page",
     image: "images/zomato.png",
     description:
-      "HTML/CSS clone of Zomato’s landing page to demonstrate UI skills and frontend design precision.",
+      "HTML/CSS clone of Zomato's landing page to demonstrate UI skills and frontend design precision.",
     link: "https://hritikmittal09.github.io/ZOMATO-LANDING-PAGE/",
     linkText: "View Project",
   },
@@ -52,7 +51,7 @@ const projects = [
     title: "Weather App (React Native)",
     image: "images/weather app.png",
     description:
-      "Weather app that fetches data based on user’s phone location and shows real-time weather.",
+      "Weather app that fetches data based on user's phone location and shows real-time weather.",
     link: "https://github.com/hritikmittal09/react-nativeweatherapp",
     linkText: "View Project Repository",
   },
@@ -66,7 +65,7 @@ const projects = [
   },
   {
     title: "Hoody.com E-commerce website",
-    image: "images/hoody.com", // Make sure this image exists
+    image: "images/hoody.com",
     description: `I developed a Next.js ecommerce website for selling hoodies, where only the admin can manage product listings. 
       The site features secure Stripe payment integration and a clean, responsive user interface styled with DaisyUI. 
       This project showcases my ability to build scalable ecommerce solutions with full control over inventory and payments.`,
@@ -80,9 +79,9 @@ const projectsSection = document.getElementById("projects-container");
 const projectCards = projects
   .map(
     (p) => `
-  <div class="max-w-xs rounded overflow-hidden shadow-lg mx-4 my-4 bg-white dark:bg-gray-800 transition">
+  <div class="max-w-xs rounded overflow-hidden shadow-lg mx-4 my-4 bg-white dark:bg-gray-800 transition flex flex-col">
     <img class="w-full h-56 object-cover" src="${p.image}" alt="${p.title}">
-    <div class="px-6 py-4">
+    <div class="px-6 py-4 flex-1">
       <h3 class="text-xl font-bold mb-2 text-gray-900 dark:text-white">${p.title}</h3>
       <p class="text-gray-700 dark:text-gray-300 text-sm">${p.description}</p>
     </div>

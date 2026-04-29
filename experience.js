@@ -36,7 +36,6 @@ const experiences = [
     link: "https://www.linkedin.com/company/www.rationarium.com/",
     linkText: "View Company Website",
   },
-
   {
     company: "Devtown Pvt. Ltd",
     logo: "images/devtown.png",
@@ -64,9 +63,9 @@ const experienceSection = document.getElementById("experience-container");
 const experienceCards = experiences
   .map(
     (exp) => `
-  <div class="max-w-xs rounded overflow-hidden shadow-lg mx-4 my-4 bg-white dark:bg-gray-800 transition">
+  <div class="max-w-xs rounded overflow-hidden shadow-lg mx-4 my-4 bg-white dark:bg-gray-800 transition flex flex-col">
     <img class="w-full h-56 object-cover" src="${exp.logo}" alt="${exp.company}">
-    <div class="px-6 py-4">
+    <div class="px-6 py-4 flex-1">
       <h3 class="text-xl font-bold mb-2 text-gray-900 dark:text-white">${exp.company}</h3>
       <p class="text-gray-700 dark:text-gray-300 mb-2">Position: ${exp.position}</p>
       <p class="text-gray-700 dark:text-gray-300 mb-2">Duration: ${exp.duration}</p>
