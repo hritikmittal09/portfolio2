@@ -31,14 +31,7 @@ const projects = [
     link: "https://hritikmittal09.github.io/ZOMATO-LANDING-PAGE/",
     linkText: "View Project",
   },
-  {
-    title: "Electron.js + React Notes App",
-    image: "images/electon-notes-app.jpg",
-    description:
-      "Cross-platform desktop app using Electron and React with a modern UI and real-time functionality.",
-    link: "https://github.com/hritikmittal09/elele-react-notes-desktop-app",
-    linkText: "View Project",
-  },
+  
   {
     title: "Recipe Generator (Angular)",
     image: "images/food app image.png",
