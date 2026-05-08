@@ -7,14 +7,20 @@ WORKDIR /app
 # Copy only package files to install dependencies
 COPY package*.json ./
 
-# Install TailwindCSS and live-server as dev dependencies
-RUN npm install -D tailwindcss live-server
+# Install ALL dependencies from package.json
+RUN npm install
+
+# Install tailwindcss globally so npx can find it
+RUN npm install -g tailwindcss live-server
 
 # Copy the rest of the project files
 COPY . .
 
+# Build CSS once at build time
+RUN npx tailwindcss -i ./style2.css -o ./output.css
+
 # Expose the development server port
 EXPOSE 3000
 
-# Start Tailwind watcher and live-server together
-CMD sh -c "npm run start & npx live-server --port=3000 --watch=index.html,output.css"
+# Start live-server (CSS already built)
+CMD ["live-server", "--port=3000"]
