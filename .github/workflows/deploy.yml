@@ -22,7 +22,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Build Docker image
-        run: docker-compose build portfolio-prod
+        run: docker compose build portfolio-prod        # ✅ fixed
       - name: Build CSS with Docker
         run: docker run --rm -v $(pwd):/app hritik_portfolio npx tailwindcss -i ./style2.css -o ./output.css
       - name: Setup Pages
