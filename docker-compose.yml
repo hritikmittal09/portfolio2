@@ -1,4 +1,3 @@
-```dockercompose
 version: "3.8"
 
 services:
@@ -16,7 +15,7 @@ services:
       - NODE_ENV=development
 
   portfolio-prod:
-    container_name: portfolio_prod fix it
+    container_name: portfolio_prod
     image: hritik_portfolio
     build:
       context: .
@@ -25,5 +24,3 @@ services:
       - "3000:3000"
     environment:
       - NODE_ENV=production
-
-```
