@@ -3,10 +3,10 @@ version: "3.8"
 services:
   portfolio-dev:
     container_name: portfolio_dev
-    image: hritik_portfolio
     build:
       context: .
       dockerfile: Dockerfile
+      target: dev          # ← uses "AS dev" stage
     ports:
       - "3000:3000"
     volumes:
@@ -17,11 +17,20 @@ services:
 
   portfolio-prod:
     container_name: portfolio_prod
-    image: hritik_portfolio
     build:
       context: .
       dockerfile: Dockerfile
+      target: prod         # ← uses "AS prod" stage (nginx)
     ports:
-      - "3000:3000"
+      - "8080:80"          # ← changed to 8080 since nginx uses port 80
     environment:
       - NODE_ENV=production
+
+  portfolio-build:
+    container_name: portfolio_build
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: build        # ← uses "AS build" stage
+    volumes:
+      - .:/app             # ← copies output.css back to your local folder

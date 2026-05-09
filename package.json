@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx tailwindcss -i ./style2.css -o ./output.css --watch",
-    "dev" : "docker-compose up portfolio-dev --build",
-    "prod" : "docker-compose up portfolio-prod --build"
+    "build": "npx tailwindcss -i ./style2.css -o ./output.css --minify",
+    "dev": "docker-compose up portfolio-dev --build",
+    "prod": "docker-compose up portfolio-prod --build"
   },
   "keywords": [],
   "author": "",
