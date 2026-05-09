@@ -6,7 +6,7 @@ const skills = [
 
   { name: "HTML", Image: "./images/html.png" },
   { name: "JAVASCRIPT", Image: "./images/js.jpeg" },
- 
+  { name: "TYPESCRIPT", Image: "./images/typescript.png" },
   { name: "CSS ", Image: "./images/css.png" },
 
   { name: "NODE.js ", Image: "./images/nodejs.png" },
