@@ -8,7 +8,7 @@ RUN npm install
 
 COPY . .
 
-RUN npm run build          # ← uses package.json build script now
+RUN npm run build
 
 # ── Stage 2: dev ────────────────────────────
 FROM node:18-alpine AS dev

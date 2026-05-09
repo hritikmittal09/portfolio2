@@ -26,20 +26,19 @@ jobs:
       - name: Build Docker image
         run: docker build --target build -t portfolio-build .
 
-      - name: Run Docker to compile Tailwind CSS
+      - name: Copy output.css from Docker container
         run: |
-          docker run --rm \
-            -v ${{ github.workspace }}:/app \
-            portfolio-build \
-            npx tailwindcss -i ./style2.css -o ./output.css --minify
+          docker create --name temp-container portfolio-build
+          docker cp temp-container:/app/output.css ./output.css
+          docker rm temp-container
 
       - name: Verify build output
         run: |
           if [ ! -f output.css ]; then
-            echo "❌ Docker build failed - output.css missing"
+            echo "❌ Build failed - output.css missing"
             exit 1
           fi
-          echo "✅ Docker build succeeded"
+          echo "✅ output.css generated successfully"
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v4
@@ -50,7 +49,7 @@ jobs:
           path: "."
 
   deploy:
-    needs: build          # ← only runs if build job succeeds
+    needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages

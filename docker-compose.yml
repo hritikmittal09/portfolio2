@@ -6,7 +6,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-      target: dev          # ← uses "AS dev" stage
+      target: dev
     ports:
       - "3000:3000"
     volumes:
@@ -20,9 +20,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-      target: prod         # ← uses "AS prod" stage (nginx)
+      target: prod
     ports:
-      - "8080:80"          # ← changed to 8080 since nginx uses port 80
+      - "8080:80"
     environment:
       - NODE_ENV=production
 
@@ -31,6 +31,4 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-      target: build        # ← uses "AS build" stage
-    volumes:
-      - .:/app             # ← copies output.css back to your local folder
+      target: build
