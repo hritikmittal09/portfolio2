@@ -20,17 +20,26 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-          cache: "npm"
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
 
-      - name: Install dependencies
-        run: npm ci
+      - name: Build Docker image
+        run: docker build --target build -t portfolio-build .
 
-      - name: Build Tailwind CSS (Production)
-        run: npx tailwindcss -i ./style2.css -o ./output.css --minify
+      - name: Run Docker to compile Tailwind CSS
+        run: |
+          docker run --rm \
+            -v ${{ github.workspace }}:/app \
+            portfolio-build \
+            npx tailwindcss -i ./style2.css -o ./output.css --minify
+
+      - name: Verify build output
+        run: |
+          if [ ! -f output.css ]; then
+            echo "❌ Docker build failed - output.css missing"
+            exit 1
+          fi
+          echo "✅ Docker build succeeded"
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v4
@@ -38,10 +47,10 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "."   # uploads entire repo root (index.html + output.css etc.)
+          path: "."
 
   deploy:
-    needs: build
+    needs: build          # ← only runs if build job succeeds
     runs-on: ubuntu-latest
     environment:
       name: github-pages
