@@ -1,0 +1,22 @@
+name: Build Check (Docker + npm)
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  docker-build-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Run npm build inside Docker (prod)
+        run: docker compose up portfolio-prod --build --abort-on-container-exit
+        # ✅ exits 0 = build passed
+        # ❌ exits non-0 = npm failed, push is marked failed on GitHub
