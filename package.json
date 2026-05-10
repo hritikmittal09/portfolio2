@@ -8,7 +8,8 @@
     "start": "npx tailwindcss -i ./style2.css -o ./output.css --watch",
     "build": "npx tailwindcss -i ./style2.css -o ./output.css --minify",
     "dev": "docker-compose up portfolio-dev --build",
-    "prod": "docker-compose up portfolio-prod --build"
+    "prod": "docker-compose up portfolio-prod --build",
+    "build:check": "docker build --no-cache --target build -t portfolio-build-check . && echo '✅ Build succeeded' || (echo '❌ Build failed' && exit 1)"
   },
   "keywords": [],
   "author": "",
