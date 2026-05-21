@@ -13,6 +13,8 @@ const skills = [
   { name: "DOCKER", Image: "./images/docker.png" },
   { name: "SQL", Image: "./images/sqlSkill.jpg" },
   { name: "MONGO-DB", Image: "./images/mongodb.jpg" },
+ { name: "Kubernetes", Image: "./images/k8s.webp" },
+
   { name: "AWS", Image: "./images/aws.png" },
 ];
 const skillSectionListId = document.getElementById("conveyor-content");
