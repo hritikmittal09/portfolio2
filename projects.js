@@ -1,5 +1,16 @@
 const projects = [
   {
+    title: "Ragfolio - AI Powered Portfolio",
+    image: "images/ragfolio.png",
+    description: `I built an AI-powered portfolio website using Retrieval-Augmented Generation (RAG) during the Haxos Workshop to create an interactive experience for visitors. 
+    The platform allows users to ask questions about my skills, projects, and experience through a conversational AI interface. 
+    It combines modern frontend technologies with intelligent context retrieval to deliver dynamic, personalized responses in real time. 
+    This project showcases my expertise in full-stack development, AI integration, and building scalable, user-centric applications.`,
+    link: "https://hritiks-ragfolio.onrender.com/",
+    linkText: "View Website",
+  },
+
+  {
     title: "Social Media Post Generator",
     image: "images/social-media-post-genrator.jpg",
     description:
@@ -31,7 +42,7 @@ const projects = [
     link: "https://hritikmittal09.github.io/ZOMATO-LANDING-PAGE/",
     linkText: "View Project",
   },
-  
+
   {
     title: "Recipe Generator (Angular)",
     image: "images/food app image.png",
