@@ -11,9 +11,10 @@ const skills = [
 
   { name: "NODE.js ", Image: "./images/nodejs.png" },
   { name: "DOCKER", Image: "./images/docker.png" },
+  { name: "Kubernetes", Image: "./images/k8s.webp" },
+
   { name: "SQL", Image: "./images/sqlSkill.jpg" },
   { name: "MONGO-DB", Image: "./images/mongodb.jpg" },
- { name: "Kubernetes", Image: "./images/k8s.webp" },
 
   { name: "AWS", Image: "./images/aws.png" },
 ];
