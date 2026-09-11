@@ -76,7 +76,7 @@ const projectsSection = document.getElementById("projects-container");
 const projectCards = projects
   .map(
     (p) => `
-  <div class="max-w-xs rounded overflow-hidden shadow-lg mx-4 my-4 bg-white dark:bg-gray-800 transition flex flex-col">
+  <div class="portfolio-card max-w-xs rounded overflow-hidden shadow-lg mx-4 my-4 bg-white dark:bg-gray-800 transition flex flex-col">
     <img class="w-full h-56 object-cover" src="${p.image}" alt="${p.title}">
     <div class="px-6 py-4 flex-1">
       <h3 class="text-xl font-bold mb-2 text-gray-900 dark:text-white">${p.title}</h3>

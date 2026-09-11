@@ -20,10 +20,18 @@ const skills = [
 ];
 const skillSectionListId = document.getElementById("conveyor-content");
 const skillList = skills.map((i) => {
-  return `<li class="conveyor-item m-2 text-center">
+  return `<li class="conveyor-item text-center">
   <img class="w-24 h-24 rounded-full mx-auto" src="${i.Image}" alt="Skill ${i.name}">
   <p class="mt-2 text-sm font-medium">${i.name}</p>
 </li>`;
 });
 
-skillSectionListId.innerHTML = skillList;
+skillSectionListId.innerHTML = skillList.join("");
+
+// A matching, non-announced copy lets the strip loop without a visible jump.
+Array.from(skillSectionListId.children).forEach((skill) => {
+  const duplicate = skill.cloneNode(true);
+  duplicate.classList.add("conveyor-duplicate");
+  duplicate.setAttribute("aria-hidden", "true");
+  skillSectionListId.appendChild(duplicate);
+});

@@ -89,7 +89,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const awardCards = awards
       .map(
         (award) => `
-      <div class="max-w-xs rounded overflow-hidden shadow-lg mx-4 my-4 bg-white dark:bg-gray-800 transition flex flex-col">
+      <div class="portfolio-card max-w-xs rounded overflow-hidden shadow-lg mx-4 my-4 bg-white dark:bg-gray-800 transition flex flex-col">
         <img class="w-full h-56 object-contain bg-gray-200 dark:bg-gray-700" src="${award.logo}" alt="${award.title}">
         <div class="px-6 py-4 flex-1">
           <h3 class="text-xl font-bold mb-2 text-gray-900 dark:text-white">${award.title}</h3>

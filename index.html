@@ -33,64 +33,81 @@
   >
     <!-- Navbar with Theme Toggle -->
     <nav
-      class="flex bg-black dark:bg-gray-800 h-14 w-full sticky top-0 z-50 justify-between items-center px-4"
+      class="portfolio-nav flex bg-black dark:bg-gray-800 h-14 w-full sticky top-0 z-50 justify-between items-center px-4"
     >
       <!-- Theme Toggle Button -->
       <button
         id="theme-toggle"
+        type="button"
+        aria-label="Toggle color theme"
         class="p-2 rounded-full bg-gray-700 hover:bg-gray-600 transition duration-300"
       >
         <i id="theme-icon" class="fa-solid fa-moon text-white"></i>
       </button>
 
       <!-- Navbar Title -->
-      <div class="text-white dark:text-gray-200 text-center">
-        <a href="#" class="px-5 pt-3">Portfolio Website</a>
+      <div class="nav-actions text-white dark:text-gray-200 text-center">
+        <button id="motion-toggle" class="motion-toggle" type="button" hidden>
+          Pause motion
+        </button>
+        <a href="#" class="nav-title">Portfolio Website</a>
       </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="custom-bg bg-gray-900 text-white py-20">
-      <div class="container mx-auto flex flex-col items-center">
-        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-          Welcome to My Portfolio
+      <div class="hero-content container mx-auto flex flex-col items-center">
+        <p class="hero-eyebrow hero-enter">Python / Web Development / DevOps</p>
+        <h1 class="hero-title hero-enter text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+          Welcome to My <span class="hero-accent">Portfolio</span>
         </h1>
         <p
-          class="text-sm sm:text-base md:text-xl mb-8 flex justify-center items-center flex-wrap px-10 text-center"
+          class="hero-description hero-enter text-sm sm:text-base md:text-xl mb-8 flex justify-center items-center flex-wrap px-10 text-center"
         >
           I'm Hritik Mittal, a passionate Python and Web Developer with a strong
           interest in DevOps
         </p>
 
-        <div class="flex justify-center">
+        <div class="hero-portrait hero-enter flex justify-center">
           <img
             class="w-64 h-64 rounded-full border-4 border-white"
             src="images/me2.jpg"
-            alt="Profile Image"
+            alt="Hritik Mittal"
           />
         </div>
 
+        <div class="hero-actions hero-enter">
+          <a class="hero-button hero-button-primary" href="#projects">
+            View my work <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+          </a>
+          <a class="hero-button hero-button-secondary" href="mailto:hritikmittal77@gmail.com">
+            Let's talk <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+          </a>
+        </div>
+
         <!-- Social Links -->
-        <div class="flex flex-wrap space-x-10 p-20 text-2xl">
-          <a href="https://www.linkedin.com/in/hritik-mittal09/" target="_blank"
-            ><i class="fa-brands fa-linkedin-in"></i
+        <div class="hero-socials hero-enter text-2xl">
+          <a href="https://www.linkedin.com/in/hritik-mittal09/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
+            ><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i
           ></a>
           <a
             href="https://www.hackerrank.com/hritikmittal77?hr_r=1"
             target="_blank"
-            ><i class="fa-brands fa-hackerrank"></i
+            rel="noopener noreferrer"
+            aria-label="HackerRank"
+            ><i class="fa-brands fa-hackerrank" aria-hidden="true"></i
           ></a>
-          <a href="https://github.com/hritikmittal09" target="_blank"
-            ><i class="fa-brands fa-github"></i
+          <a href="https://github.com/hritikmittal09" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+            ><i class="fa-brands fa-github" aria-hidden="true"></i
           ></a>
-          <a href="mailto:hritikmittal77@gmail.com" target="_blank"
-            ><i class="fa-solid fa-envelope"></i
+          <a href="mailto:hritikmittal77@gmail.com" aria-label="Email Hritik"
+            ><i class="fa-solid fa-envelope" aria-hidden="true"></i
           ></a>
         </div>
       </div>
     </section>
-    <section class="text-white flex
-    flex-wrap space-x-10 p-20 text-2xl justify-center items-center">
+    <section class="resume-section text-white flex
+    flex-wrap text-2xl justify-center items-center" data-reveal>
       <button id="resume-btn" class="bg-black text-white rounded-lg border-white px-12 " >
        <i class="fa-solid fa-download"></i> Download Resume</button>
 
@@ -99,7 +116,7 @@
     <!-- Skills -->
     <section class="bg-gray-200 dark:bg-gray-800 py-10">
       <div class="container mx-auto">
-        <h2 class="text-3xl font-bold mb-8 text-center">Skills</h2>
+        <h2 class="section-heading text-3xl font-bold mb-8 text-center" data-reveal>Skills</h2>
         <div class="conveyor-belt overflow-hidden">
           <ul class="conveyor-content flex" id="conveyor-content"></ul>
         </div>
@@ -109,8 +126,8 @@
     <!-- About -->
     <section class="bg-gray-200 dark:bg-gray-800 py-10">
       <div class="container mx-auto p-10">
-        <h2 class="text-3xl font-bold mb-8 text-center">About Me</h2>
-        <p class="text-gray-700 dark:text-gray-300 text-center">
+        <h2 class="section-heading text-3xl font-bold mb-8 text-center" data-reveal>About Me</h2>
+        <p class="text-gray-700 dark:text-gray-300 text-center" data-reveal>
           Hello, I'm Hritik Mittal. I have 2 + years of experience in web
           development, with a strong focus on Python, Ractjs, HTML, CSS,
           Node.js, and JavaScript. I'm passionate about creating responsive and
@@ -125,13 +142,14 @@
     <!-- Education -->
     <section class="bg-gray-200 dark:bg-gray-800 py-10">
       <div class="container mx-auto text-center">
-        <h2 class="text-3xl font-bold m-10">Education</h2>
+        <h2 class="section-heading text-3xl font-bold m-10" data-reveal>Education</h2>
         <img
+          data-reveal
           class="mx-auto mb-6 w-48 h-48 object-contain shadow-lg"
           src="images/college logo.jfif"
           alt="College Logo"
         />
-        <p class="text-gray-700 dark:text-gray-300 p-10">
+        <p class="text-gray-700 dark:text-gray-300 p-10" data-reveal>
           B.Tech graduate in Computer Science from Raja Balwant Singh College,
           Agra. The college is affiliated with Dr. A.P.J. Abdul Kalam Technical
           University, Uttar Pradesh. Actively seeking job and internship
@@ -143,7 +161,7 @@
     <!-- Experience -->
     <section class="bg-gray-200 dark:bg-gray-800 py-10">
       <div class="container mx-auto">
-        <h2 class="text-3xl font-bold mb-8 text-center">Experience</h2>
+        <h2 class="section-heading text-3xl font-bold mb-8 text-center" data-reveal>Experience</h2>
         <div
           id="experience-container"
           class="flex flex-wrap justify-center"
@@ -152,9 +170,9 @@
     </section>
 
     <!-- Projects -->
-    <section class="bg-gray-200 dark:bg-gray-800 py-10">
+    <section id="projects" class="bg-gray-200 dark:bg-gray-800 py-10">
       <div class="container mx-auto">
-        <h2 class="text-3xl font-bold mb-8 text-center">Projects</h2>
+        <h2 class="section-heading text-3xl font-bold mb-8 text-center" data-reveal>Projects</h2>
         <div
           id="projects-container"
           class="flex flex-wrap justify-center"
@@ -165,7 +183,7 @@
     <!-- Awards -->
     <section class="bg-gray-100 dark:bg-gray-900 py-10">
       <div class="container mx-auto">
-        <h2 class="text-3xl font-bold mb-8 text-center">
+        <h2 class="section-heading text-3xl font-bold mb-8 text-center" data-reveal>
           Awards & Certifications
         </h2>
         <div id="award-container" class="flex flex-wrap justify-center"></div>
@@ -186,5 +204,6 @@
     <script src="./awards.js"></script>
     <script src="./theme-toggle.js"></script>
     <script src="./resume-download.js"></script>
+    <script src="./animations.js"></script>
   </body>
 </html>
