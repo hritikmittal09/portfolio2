@@ -1,5 +1,28 @@
 const experiences = [
   {
+    company: "Sia",
+    logo: "images/sia.jpg",
+    position: "Founding Engineer",
+    employmentType: "Full-time",
+    duration: "Dec 2025 – Present",
+    location: "London Area, United Kingdom · Remote",
+    description:
+      "Led development of an AI-powered movie-making platform using LLMs and RAG, delivering scalable creative workflows and more consistent AI-generated content.",
+    link: "https://studio.sia.vision/about",
+    linkText: "View Company Website",
+  },
+  {
+    company: "Instagram",
+    logo: "images/instgram.jpg",
+    position: "Tech Content Creator",
+    employmentType: "Self-employed",
+    duration: "May 2026 – Present",
+    description:
+      "Created tech content on frontend and backend development, sharing software engineering insights and experiences as an SDE at startups.",
+    link: "https://www.instagram.com/hritikthecoder/",
+    linkText: "View Instagram Profile",
+  },
+  {
     company: "Hacktoberfest 2025",
     logo: "images/hacktoberfest.png",
     position: "Open Source Contributor",
@@ -67,9 +90,16 @@ const experienceCards = experiences
     <img class="w-full h-56 object-cover" src="${exp.logo}" alt="${exp.company}">
     <div class="px-6 py-4 flex-1">
       <h3 class="text-xl font-bold mb-2 text-gray-900 dark:text-white">${exp.company}</h3>
-      <p class="text-gray-700 dark:text-gray-300 mb-2">Position: ${exp.position}</p>
+      <p class="text-gray-700 dark:text-gray-300 mb-2">Position: ${exp.position}${exp.employmentType ? ` · ${exp.employmentType}` : ""}</p>
       <p class="text-gray-700 dark:text-gray-300 mb-2">Duration: ${exp.duration}</p>
-      <p class="text-gray-700 dark:text-gray-300">${exp.description}</p>
+      ${exp.location ? `<p class="text-gray-700 dark:text-gray-300 mb-2">Location: ${exp.location}</p>` : ""}
+      ${
+        Array.isArray(exp.description)
+          ? `<ul class="list-disc pl-5 space-y-3 text-gray-700 dark:text-gray-300">
+              ${exp.description.map((item) => `<li>${item}</li>`).join("")}
+            </ul>`
+          : `<p class="text-gray-700 dark:text-gray-300">${exp.description}</p>`
+      }
     </div>
     <div class="px-6 py-4">
       <a href="${exp.link}" target="_blank"

@@ -23,18 +23,6 @@ html {
   gap: 1.25rem;
 }
 
-.motion-toggle {
-  padding: 0.4rem 0.7rem;
-  border: 1px solid #64748b;
-  border-radius: 999px;
-  font-size: 0.75rem;
-  color: #e2e8f0;
-}
-
-.motion-toggle:hover {
-  background: #334155;
-}
-
 .custom-bg {
   position: relative;
   overflow: hidden;
@@ -236,6 +224,10 @@ html {
   display: none;
 }
 
+#experience-container {
+  gap: 1.5rem;
+}
+
 .portfolio-card {
   border-radius: 1rem;
   transition:
@@ -279,28 +271,28 @@ html {
   .hero-actions { animation-delay: 320ms; }
   .hero-socials { animation-delay: 400ms; }
 
-  .motion-ready:not(.motion-paused) .custom-bg::before,
-  .motion-ready:not(.motion-paused) .custom-bg::after {
+  .motion-ready .custom-bg::before,
+  .motion-ready .custom-bg::after {
     animation: ambient-drift 16s ease-in-out infinite alternate;
   }
 
-  .motion-ready:not(.motion-paused) .custom-bg::after {
+  .motion-ready .custom-bg::after {
     animation-delay: -8s;
     animation-direction: alternate-reverse;
   }
 
-  .motion-ready:not(.motion-paused) .hero-portrait img {
+  .motion-ready .hero-portrait img {
     animation: portrait-float 6s ease-in-out infinite;
   }
 
-  .motion-ready:not(.motion-paused) .conveyor-content {
+  .motion-ready .conveyor-content {
     width: max-content;
     flex-wrap: nowrap;
     justify-content: flex-start;
     animation: conveyor 50s linear infinite;
   }
 
-  .motion-ready:not(.motion-paused) .conveyor-duplicate {
+  .motion-ready .conveyor-duplicate {
     display: list-item;
   }
 
@@ -400,8 +392,7 @@ html {
     animation: none !important;
   }
 
-  .motion-ready .conveyor-duplicate,
-  #motion-toggle {
+  .motion-ready .conveyor-duplicate {
     display: none;
   }
 }

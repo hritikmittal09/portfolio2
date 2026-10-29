@@ -1,9 +1,7 @@
 window.addEventListener("DOMContentLoaded", () => {
   const root = document.documentElement;
-  const motionToggle = document.getElementById("motion-toggle");
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   const revealTargets = document.querySelectorAll("[data-reveal], .portfolio-card");
-  let motionPaused = false;
   let revealObserver;
 
   const reveal = (element) => {
@@ -14,19 +12,11 @@ window.addEventListener("DOMContentLoaded", () => {
   };
 
   const syncMotion = () => {
-    root.classList.toggle("motion-paused", motionPaused || reducedMotion.matches);
-    motionToggle.hidden = reducedMotion.matches;
-    motionToggle.textContent = motionPaused ? "Resume motion" : "Pause motion";
-
-    if (motionPaused || reducedMotion.matches) {
+    if (reducedMotion.matches) {
       revealTargets.forEach(reveal);
     }
   };
 
-  motionToggle.addEventListener("click", () => {
-    motionPaused = !motionPaused;
-    syncMotion();
-  });
   reducedMotion.addEventListener("change", syncMotion);
   syncMotion();
   root.classList.add("motion-ready");
